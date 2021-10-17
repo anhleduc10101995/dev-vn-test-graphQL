@@ -6,6 +6,8 @@ type Product {
   id: Int!
   name: String!
   type: String
+  price: Float
+  discount: Float
 }
 
 type Query {
@@ -22,9 +24,13 @@ type Mutation {
 input CreateProductInput {
   name: String!
   type: String
+  price: Float
+  discount: Float
 }
 
 input UpdateProductInput {
   name: String
   type: String
+  price: Float
+  discount: Float
 }

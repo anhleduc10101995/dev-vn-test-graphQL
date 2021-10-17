@@ -15,6 +15,15 @@ export class Product {
     @Column({nullable: true})
     @Field({nullable: true})
     type?: string;   
+
+
+    @Column({nullable: true})
+    @Field({nullable: true})
+    price?: number;   
+
+    @Column({nullable: true})
+    @Field({nullable: true})
+    discount?: number;   
 }
 
 
